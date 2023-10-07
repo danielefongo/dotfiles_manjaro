@@ -8,7 +8,9 @@
       stderr: true
 
 - link:
-    ~/.foo: foo
+    ~/.config/rtx/config.toml: dots/.rtx.toml
+    ~/.zshrc: dots/.zshrc
 
 - shell:
     - [bash scripts/init.sh]
+    - [bash scripts/apps.sh]
