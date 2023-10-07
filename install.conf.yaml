@@ -9,6 +9,7 @@
 
 - link:
     ~/.config/rtx/config.toml: dots/.rtx.toml
+    ~/.config/nvim: dots/nvim
     ~/.zshrc: dots/.zshrc
 
 - shell:
