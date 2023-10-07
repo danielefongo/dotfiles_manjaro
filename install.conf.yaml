@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+    shell:
+      stdout: true
+      stderr: true
+
+- link:
+    ~/.foo: foo
+
+- shell:
+    - [bash scripts/init.sh]
