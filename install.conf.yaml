@@ -10,7 +10,10 @@
 - link:
     ~/.config/rtx/config.toml: dots/.rtx.toml
     ~/.config/nvim: dots/nvim
+    ~/.config/alacritty: dots/alacritty
+    ~/.tmux.conf: dots/tmux/tmux.conf
     ~/.zshrc: dots/.zshrc
+    ~/.local/share/fonts: dots/fonts
 
 - shell:
     - [bash scripts/init.sh]

@@ -9,3 +9,7 @@ yay -S fzf --noconfirm
 yay -S ripgrep --noconfirm
 curl https://rtx.pub/install.sh | sh
 yay -S neovim --noconfirm
+yay -S tmux --noconfirm
+
+# utils
+yay -S alacritty --noconfirm
