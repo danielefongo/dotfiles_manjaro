@@ -12,9 +12,18 @@
     ~/.config/git: dots/git
     ~/.config/nvim: dots/nvim
     ~/.config/alacritty: dots/alacritty
+    ~/.config/i3: dots/i3
+    ~/.config/picom: dots/picom
+    ~/.config/polybar: dots/polybar
+    ~/.config/rofi: dots/rofi
+    ~/.config/dunst: dots/dunst
+    ~/.config/systemd/user: dots/systemd
     ~/.tmux.conf: dots/tmux/tmux.conf
     ~/.zshrc: dots/.zshrc
     ~/.local/share/fonts: dots/fonts
+    ~/.local/bin/:
+      glob: true
+      path: dots/scripts/*
 
 - shell:
     - [bash scripts/init.sh]

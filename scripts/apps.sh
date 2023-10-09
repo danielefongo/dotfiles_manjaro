@@ -1,5 +1,6 @@
 # essentials
 yay -S make --noconfirm
+yay -S inotify-tools --noconfirm
 
 # terminal
 yay -S zsh --noconfirm
@@ -17,3 +18,11 @@ yay -S delta --noconfirm
 
 # utils
 yay -S alacritty --noconfirm
+
+yay -S i3 --noconfirm
+yay -S i3lock-fancy --noconfirm
+yay -S rofi --noconfirm
+yay -S polybar --noconfirm
+yay -S flameshot --noconfirm
+yay -S feh --noconfirm
+yay -S picom --noconfirm
