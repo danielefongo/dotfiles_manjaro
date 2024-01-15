@@ -24,6 +24,7 @@ yay -S alacritty --noconfirm
 yay -S i3 --noconfirm
 yay -S i3lock-fancy --noconfirm
 yay -S rofi --noconfirm
+yay -S dunst --noconfirm
 yay -S polybar --noconfirm
 yay -S flameshot --noconfirm
 yay -S feh --noconfirm
