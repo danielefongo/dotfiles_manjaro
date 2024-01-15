@@ -30,6 +30,8 @@ yay -S polybar --noconfirm
 yay -S flameshot --noconfirm
 yay -S feh --noconfirm
 yay -S picom --noconfirm
+yay -S xbindkeys --noconfirm
+yay -S playerctl --noconfirm
 
 # docker
 yay -S docker --noconfirm

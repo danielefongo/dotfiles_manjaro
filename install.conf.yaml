@@ -21,6 +21,7 @@
     ~/.config/systemd/user: dots/systemd
     ~/.tmux.conf: dots/tmux/tmux.conf
     ~/.zshrc: dots/.zshrc
+    ~/.xbindkeysrc: dots/.xbindkeysrc
     ~/.local/share/fonts: dots/fonts
     ~/.local/bin/:
       glob: true
