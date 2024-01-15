@@ -30,3 +30,10 @@ yay -S polybar --noconfirm
 yay -S flameshot --noconfirm
 yay -S feh --noconfirm
 yay -S picom --noconfirm
+
+# docker
+yay -S docker --noconfirm
+yay -S docker-compose --noconfirm
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
+sudo usermod -aG docker $USER
