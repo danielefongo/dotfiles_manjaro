@@ -12,6 +12,7 @@ yay -S ripgrep --noconfirm
 curl https://mise.jdx.dev/install.sh | sh
 mise install
 yay -S neovim --noconfirm
+yay -S entr --noconfirm
 yay -S tmux --noconfirm
 yay -S git --noconfirm
 yay -S tig --noconfirm
