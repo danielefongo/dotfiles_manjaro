@@ -8,7 +8,7 @@
       stderr: true
 
 - link:
-    ~/.config/rtx/config.toml: dots/.rtx.toml
+    ~/.config/mise/config.toml: dots/.mise.toml
     ~/.config/git: dots/git
     ~/.config/nvim: dots/nvim
     ~/.config/alacritty: dots/alacritty
