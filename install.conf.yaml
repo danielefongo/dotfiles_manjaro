@@ -9,6 +9,7 @@
 
 - link:
     ~/.config/mise/config.toml: dots/.mise.toml
+    ~/.config/btop: dots/btop
     ~/.config/git: dots/git
     ~/.config/nvim: dots/nvim
     ~/.config/alacritty: dots/alacritty

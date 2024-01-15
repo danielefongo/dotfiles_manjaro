@@ -16,6 +16,7 @@ yay -S tmux --noconfirm
 yay -S git --noconfirm
 yay -S tig --noconfirm
 yay -S hub --noconfirm
+yay -S btop --noconfirm
 
 # utils
 yay -S alacritty --noconfirm
