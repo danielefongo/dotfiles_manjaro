@@ -39,3 +39,5 @@ yay -S docker-compose --noconfirm
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
+
+./dots/scripts/dots_setup

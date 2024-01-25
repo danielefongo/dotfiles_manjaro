@@ -8,19 +8,12 @@
       stderr: true
 
 - link:
-    ~/.config/mise/config.toml: dots/.mise.toml
-    ~/.config/btop: dots/btop
-    ~/.config/git: dots/git
-    ~/.config/nvim: dots/nvim
-    ~/.config/alacritty: dots/alacritty
-    ~/.config/i3: dots/i3
-    ~/.config/picom: dots/picom
-    ~/.config/polybar: dots/polybar
-    ~/.config/rofi: dots/rofi
-    ~/.config/dunst: dots/dunst
+    ~/.zshrc: dots/output/.zshrc
+    ~/.tmux.conf: dots/output/tmux/tmux.conf
+    ~/.config/:
+      glob: true
+      path: dots/output/*
     ~/.config/systemd/user: dots/systemd
-    ~/.tmux.conf: dots/tmux/tmux.conf
-    ~/.zshrc: dots/.zshrc
     ~/.xbindkeysrc: dots/.xbindkeysrc
     ~/.local/share/fonts: dots/fonts
     ~/.local/bin/:
