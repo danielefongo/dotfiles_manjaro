@@ -16,6 +16,7 @@
     ~/.config/systemd/user: dots/systemd
     ~/.xbindkeysrc: dots/.xbindkeysrc
     ~/.local/share/fonts: dots/fonts
+    ~/.themes/gtk-theme: dots/output/gtk
     ~/.local/bin/:
       glob: true
       path: dots/scripts/*

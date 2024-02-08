@@ -18,6 +18,7 @@ yay -S git --noconfirm
 yay -S tig --noconfirm
 yay -S hub --noconfirm
 yay -S btop --noconfirm
+yay -S sassc --noconfirm
 
 # utils
 yay -S alacritty --noconfirm
@@ -32,6 +33,7 @@ yay -S feh --noconfirm
 yay -S picom --noconfirm
 yay -S xbindkeys --noconfirm
 yay -S playerctl --noconfirm
+yay -S xsettingsd --noconfirm
 
 # docker
 yay -S docker --noconfirm
