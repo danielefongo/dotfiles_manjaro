@@ -4,5 +4,5 @@
 	ignore = dirty
 [submodule "dots"]
 	path = dots
-	url = git@github.com:danielefongo/dots
+	url = ../dots.git
 	ignore = dirty
