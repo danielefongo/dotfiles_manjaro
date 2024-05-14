@@ -35,6 +35,7 @@ yay -S xbindkeys --noconfirm
 yay -S playerctl --noconfirm
 yay -S xsettingsd --noconfirm
 yay -S redshift --noconfirm
+yay -S xdotool --noconfirm
 
 # docker
 yay -S docker --noconfirm
