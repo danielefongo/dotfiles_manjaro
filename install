@@ -11,4 +11,5 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 git submodule update --init
 bash ./scripts/init.sh && touch $HOME/.dots_init
 
+[ command -v pip ] &>/dev/null && pip install pyyaml
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
