@@ -24,5 +24,4 @@
 
 - shell:
     - [bash scripts/firefox.sh]
-    - [bash scripts/init.sh]
     - [bash scripts/apps.sh]
