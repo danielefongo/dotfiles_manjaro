@@ -4,7 +4,7 @@ yay -S inotify-tools --noconfirm
 
 # terminal
 yay -S zsh --noconfirm
-yay -s $(which zsh) $(whoami)
+chsh -s $(which zsh)
 yay -S autojump-rs --noconfirm
 yay -S fzf --noconfirm
 yay -S ripgrep --noconfirm
