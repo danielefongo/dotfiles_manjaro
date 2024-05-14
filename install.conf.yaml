@@ -23,5 +23,6 @@
       path: dots/scripts/*
 
 - shell:
+    - [bash scripts/xsessions.sh]
     - [bash scripts/firefox.sh]
     - [bash scripts/apps.sh]
