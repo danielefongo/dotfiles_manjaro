@@ -7,9 +7,11 @@ sudo cp dots/firefox/install/defaults/pref/config-pref.js /usr/lib/firefox/defau
 
 DOTFILES_PATH="$(dirname "$(readlink -f "$0")")/.."
 
-for file_path in $HOME/.mozilla/firefox/*.default; do
+for file_path in $HOME/.mozilla/firefox/*.default*; do
+	[ -d $file_path ] || exit 0
+
 	rm -rf "$file_path/chrome"
-	ln -s "$DOTFILES_PATH/dots/output/firefox/chrome" "$file_path/chrome"
+	ln -sf "$DOTFILES_PATH/dots/output/firefox/chrome" "$file_path/chrome"
 	rm -rf "$file_path/user.js"
-	ln -s "$DOTFILES_PATH/dots/output/firefox/user.js" "$file_path/user.js"
+	ln -sf "$DOTFILES_PATH/dots/output/firefox/user.js" "$file_path/user.js"
 done
