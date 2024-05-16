@@ -3,14 +3,23 @@ while read -r update; do
 	updates+=("$update")
 done < <(pacman -Qu)
 
-get_updates() {
-	printf '%s\n' "${updates[@]}"
+packages=()
+while read -r package; do
+	packages+=("$package")
+done < <(pacman -Q)
+
+search_update() {
+	printf '%s\n' "${updates[@]}" | grep "^$1"
+}
+
+search_package() {
+	printf '%s\n' "${packages[@]}" | grep "^$1"
 }
 
 install() {
 	set -e
 	APP=$1
-	if [ -n "$(get_updates | grep -e ^$APP)" ]; then
+	if [ -n "$(search_update $APP)" ] || ! [ -n "$(search_package $APP)" ]; then
 		yay -S --noconfirm $APP
 	else
 		echo "Skip $APP..."
