@@ -9,6 +9,7 @@
 
 - link:
     ~/.zshrc: dots/output/.zshrc
+    ~/.lesskey: dots/output/.lesskey
     ~/.tmux.conf: dots/output/tmux/tmux.conf
     ~/.config/redshift.conf: dots/output/redshift/redshift.conf
     ~/.config/:
