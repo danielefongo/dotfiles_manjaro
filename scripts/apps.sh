@@ -24,7 +24,7 @@ yay -S sassc --noconfirm
 yay -S alacritty --noconfirm
 
 yay -S i3 --noconfirm
-yay -S i3lock-fancy-rapid --noconfirm
+yay -S i3lock-fancy-rapid-git --noconfirm
 yay -S rofi --noconfirm
 yay -S dunst --noconfirm
 yay -S polybar --noconfirm
