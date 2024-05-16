@@ -8,8 +8,10 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-git submodule update --init
-bash ./scripts/init.sh && touch $HOME/.dots_init
+git submodule update --init 2>/dev/null || true
+if ! [ -f "$HOME/.dots_init" ]; then
+	bash ./scripts/init.sh && touch $HOME/.dots_init
+fi
 
 [ command -v pip ] &>/dev/null && pip install pyyaml
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
