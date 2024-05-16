@@ -1,45 +1,68 @@
+updates=()
+while read -r update; do
+	updates+=("$update")
+done < <(pacman -Qu)
+
+get_updates() {
+	printf '%s\n' "${updates[@]}"
+}
+
+install() {
+	set -e
+	APP=$1
+	if [ -n "$(get_updates | grep -e ^$APP)" ]; then
+		yay -S --noconfirm $APP
+	else
+		echo "Skip $APP..."
+	fi
+}
+
 # essentials
-yay -S make --noconfirm
-yay -S inotify-tools --noconfirm
+install make
+install inotify-tools
 
 # terminal
-yay -S zsh --noconfirm
-chsh -s $(which zsh)
-yay -S autojump-rs --noconfirm
-yay -S fzf --noconfirm
-yay -S ripgrep --noconfirm
+install zsh
+[ "$(echo $SHELL)" == /usr/bin/zsh ] || chsh -s $(which zsh)
+install autojump-rs
+install fzf
+install ripgrep
 
-curl https://mise.jdx.dev/install.sh | sh
-mise install -y
-yay -S neovim --noconfirm
-yay -S entr --noconfirm
-yay -S tmux --noconfirm
-yay -S git --noconfirm
-yay -S tig --noconfirm
-yay -S hub --noconfirm
-yay -S btop --noconfirm
-yay -S sassc --noconfirm
+if ! [ $(command -v mise) ]; then
+	curl https://mise.jdx.dev/install.sh | sh
+	mise install -y
+else
+	echo "Skip mise..."
+fi
+install neovim
+install entr
+install tmux
+install git
+install tig
+install hub
+install btop
+install sassc
 
 # utils
-yay -S alacritty --noconfirm
+install alacritty
 
-yay -S i3 --noconfirm
-yay -S i3lock-fancy-rapid-git --noconfirm
-yay -S rofi --noconfirm
-yay -S dunst --noconfirm
-yay -S polybar --noconfirm
-yay -S flameshot --noconfirm
-yay -S feh --noconfirm
-yay -S picom --noconfirm
-yay -S xbindkeys --noconfirm
-yay -S playerctl --noconfirm
-yay -S xsettingsd --noconfirm
-yay -S redshift --noconfirm
-yay -S xdotool --noconfirm
+install i3-wm
+install i3lock-fancy-rapid-git
+install rofi
+install dunst
+install polybar
+install flameshot
+install feh
+install picom
+install xbindkeys
+install playerctl
+install xsettingsd
+install redshift
+install xdotool
 
 # docker
-yay -S docker --noconfirm
-yay -S docker-compose --noconfirm
+install docker
+install docker-compose
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
