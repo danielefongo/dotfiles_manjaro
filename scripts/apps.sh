@@ -46,6 +46,7 @@ install entr
 install tmux
 install git
 install tig
+install git-delta
 install hub
 install btop
 install sassc
