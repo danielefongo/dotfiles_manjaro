@@ -30,6 +30,12 @@ install() {
 install make
 install inotify-tools
 
+# languages
+if ! [ $(command -v mise) ]; then
+	curl https://mise.jdx.dev/install.sh | sh
+fi
+mise install -y
+
 # terminal
 install zsh
 [ "$(echo $SHELL)" == /usr/bin/zsh ] || chsh -s $(which zsh)
@@ -37,10 +43,6 @@ install autojump-rs
 install fzf
 install ripgrep
 
-if ! [ $(command -v mise) ]; then
-	curl https://mise.jdx.dev/install.sh | sh
-fi
-mise install -y
 install neovim
 install entr
 install tmux
