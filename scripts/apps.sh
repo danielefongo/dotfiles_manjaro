@@ -39,10 +39,8 @@ install ripgrep
 
 if ! [ $(command -v mise) ]; then
 	curl https://mise.jdx.dev/install.sh | sh
-	mise install -y
-else
-	echo "Skip mise..."
 fi
+mise install -y
 install neovim
 install entr
 install tmux
