@@ -11,17 +11,44 @@
     ~/.zshrc: dots/output/.zshrc
     ~/.lesskey: dots/output/.lesskey
     ~/.tmux.conf: dots/output/tmux/tmux.conf
+    ~/.config/alacritty/: dots/output/alacritty/
+    ~/.config/btop/: dots/output/btop/
+    ~/.config/dunst/: dots/output/dunst/
+    ~/.config/firefox/: dots/output/firefox/
+    ~/.config/git/: dots/output/git/
+    ~/.config/gtk/: dots/output/gtk/
+    ~/.config/i3/: dots/output/i3/
+    ~/.config/mise/: dots/output/mise/
+    ~/.config/nvim/: dots/output/nvim/
+    ~/.config/picom/: dots/output/picom/
+    ~/.config/polybar/: dots/output/polybar/
     ~/.config/redshift.conf: dots/output/redshift/redshift.conf
-    ~/.config/:
-      glob: true
-      path: dots/output/*
-    ~/.config/systemd/user: dots/systemd
+    ~/.config/rofi/: dots/output/rofi/
+    ~/.config/tig/: dots/output/tig/
+    ~/.config/tmux/: dots/output/tmux/
+    ~/.config/wallpaper/: dots/output/wallpaper/
+    ~/.config/xsettingsd/: dots/output/xsettingsd/
+    ~/.config/.lesskey: dots/output/.lesskey
+    ~/.config/.xbindkeysrc: dots/output/.xbindkeysrc
+    ~/.config/.zshrc: dots/output/.zshrc
+    ~/.config/systemd/user/dunst.service: dots/systemd/dunst.service
+    ~/.config/systemd/user/i3.service: dots/systemd/i3.service
+    ~/.config/systemd/user/i3-session.target: dots/systemd/i3-session.target
+    ~/.config/systemd/user/picom.service: dots/systemd/picom.service
+    ~/.config/systemd/user/polybar.service: dots/systemd/polybar.service
+    ~/.config/systemd/user/redshift.service: dots/systemd/redshift.service
+    ~/.config/systemd/user/theme.service: dots/systemd/theme.service
+    ~/.config/systemd/user/wallpaper.service: dots/systemd/wallpaper.service
     ~/.xbindkeysrc: dots/.xbindkeysrc
     ~/.local/share/fonts: dots/fonts
     ~/.themes/gtk-theme: dots/output/gtk
-    ~/.local/bin/:
-      glob: true
-      path: dots/scripts/*
+    ~/.local/bin/desktop-init: dots/scripts/desktop-init
+    ~/.local/bin/dots_changes: dots/scripts/dots_changes
+    ~/.local/bin/dots_setup: dots/scripts/dots_setup
+    ~/.local/bin/i3resize: dots/scripts/i3resize
+    ~/.local/bin/i3restart: dots/scripts/i3restart
+    ~/.local/bin/theme: dots/scripts/theme
+    ~/.local/bin/wallpaper_set: dots/scripts/wallpaper_set
 
 - shell:
     - [bash scripts/xsessions.sh]
